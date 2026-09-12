@@ -3,32 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - (Nombre de Ciudad)</title>
+    <title>Contacto | Sitio oficial de turismo de El Bolsón</title>
+    <link rel="icon" href="imagenes/favicon.png" type="image/png">
 </head>
 <body>
-        <header>
-        <h1>Contacto</h1>
+
+    <header>
+        <h1>Turismo de El Bolsón</h1>
         <p>Comunicate con la oficina de turismo de nuestra ciudad.</p>
         <nav>
             <ul>
+                <li><a href="index.html">Página Principal</a></li>
                 <li><a href="lugares.html">Lugares</a></li>
-                <li><a href="ciudad.html">ciudad</a></li>
-                <li><a href="index.html">Pagina Principal</a></li>
+                <li><a href="ciudad.html">Ciudad</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
-        </header>
+    </header>
 
     <main>
+        <section>
+            <h2>Contacto</h2>
+            <p>Este es un espacio para que acerques comentarios, dudas o sugerencias.</p>
+            <p><strong>Ahora estar en contacto es más simple y rápido:</strong> lunes a viernes de 10 a 17 h, sábados, domingos y feriados de 10 a 19 h, podés hablar con un asistente de turismo, haciendo clic en este número 
+            <a href="https://wa.me/5491150500147" target="_blank"><img src="imagenes/Contacto/-icon-wapp.png" alt="WhatsApp" width="13" height="13">+54 11 1234-5678</a> o a través de la burbuja de chat.</p> 
+
+            <form action="/enviar" method="post">
+                <div>
+                    <label for="nombre">Nombre *</label><br>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div>
+                    <label for="email">Email *</label><br>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div>
+                    <label for="tipo_consulta">Tipo de Consulta *</label><br>
+                    <select id="tipo_consulta" name="tipo_consulta" required>
+                        <option value="">Seleccione</option>
+                        <option value="general">General</option>
+                        <option value="sugerencia">Sugerencia</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="consulta">Consulta *</label><br>
+                    <textarea id="consulta" name="consulta" rows="4" required></textarea>
+                </div>
+
+                <div>
+                    <label for="pais">País *</label><br>
+                    <select id="pais" name="pais" required>
+                        <option value="">Seleccioná</option>
+                        <option value="ar">Argentina</option>
+                        <option value="br">Brasil</option>
+                        <option value="cl">Chile</option>
+                        <optgroup label="Otros países">
+                            <option value="us">Estados Unidos</option>
+                            <option value="uk">Reino Unido</option>
+                            <option value="fr">Francia</option>
+                            <option value="de">Alemania</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="recaptcha" required>
+                    <label for="recaptcha">No soy un robot</label>
+                </div>
+
+                <div>
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </section>
+
+
         <section>
             <h2>Oficina de Información Turística</h2>
             <p><strong>Dirección:</strong> Av. Principal 123, Centro, El Bolsón, Río Negro</p>
             <p><strong>Teléfono:</strong> <a href="tel:+541112345678">+54 11 1234-5678</a></p>
             <p><strong>Correo electrónico:</strong> <a href="mailto:turismo@gmail.com">turismo@gmail.com</a></p>
         </section>
-          
     </main>
+    
+
+
     <footer>
-        <p>© 2026 Mi Sitio Web</p>
+        <div>
+            <h3>Turismo El Bolsón</h3>
+            <p>Sitio oficial de turismo de la ciudad.</p>
+        </div>
+        <div>
+            <h4>Secciones</h4>
+            <ul>
+                <li><a href="index.html">Página Principal</a></li>
+                <li><a href="lugares.html">Lugares</a></li>
+                <li><a href="ciudad.html">Ciudad</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Contacto directo</h4>
+            <p><a href="mailto:turismo@gmail.com">Escribinos un correo</a></p>
+            <p><a href="https://wa.me/5491150500147" target="_blank">Chat de WhatsApp</a></p>
+        </div>
+        <div>
+            <p>© 2026 Turismo El Bolsón - Todos los derechos reservados.</p>
+        </div>
     </footer>
     
 </body>
