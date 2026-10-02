@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+
+    --color--bg-dark: #252f3b;               
+    --color-bg-light: #f9f9f9;       
+    --dark--color-text: #1a1a1a; 
+    --light-color-text: #f8f9fa;       
+    --color-text-muted: #666666;
+    --fuente-titulos: 'Playfair Display', serif;
+    --fuente-texto: 'Inter', sans-serif;
+
+}
+
+
+/* ----------------------
+    TEXTO Y TITULO
+ ----------------------*/
+
+body {
+    font-family: var(--fuente-texto);
+}
+
+
+h1, h2, h3, h4 {
+    font-family: var(--fuente-titulos);
+}
+
+
+/* ----------------------
+    HEADER Y NAV
+ ----------------------*/
+
+
+header{
+    background: var(--color--bg-dark);
+    color:var(--light-color-text);
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav{
+
+    backdrop-filter: blur(5px);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content:center;
+    gap: 200px; 
+    padding: 10px;
+}
+
+
+nav ul li a{
+    color: var(--light-color-text);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.05rem;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: 300ms;
+}
+
+nav ul li a:hover{
+    background-color: var(--color-bg-light);
+    color:var(--dark--color-text);
+}
+
+body, html{
+    width: 100%;
+}
+
+
+/* ----------------------
+    FOOTER
+ ----------------------*/
+footer{
+    background: #252f3b;
+    margin-top: auto;
+    display: flex;
+    justify-content: space-around;
+    color: #ffffff;
+    padding: 20px 16px;
+    margin-top: 100px;
+    flex-wrap: wrap;
+}
+
+footer section {
+    flex: 1 1 300px; 
+    margin-bottom: 20px;
+}
+
+footer h4 {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ffffff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+footer p {
+    color: #bdc3c7;
+    font-size: 0.95rem;
+
+}
+
+footer ul {
+    list-style: none;   
+}
+
+footer ul li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+    color: #bdc3c7;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    transition:300ms;
+    padding: 5px 0px;
+}
+
+footer ul li a:hover { 
+
+    color: var(--color-text-muted);
+
+}
+
+footer div {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 10px;
+    margin-top: 10px;
+    font-size: 0.85rem;
+    color: var(--second-color-text);
+}
