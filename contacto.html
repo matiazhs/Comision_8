@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Contactate con la oficina de turismo de Ribera Azul para realizar consultas, sugerencias y obtener información turística.">
     <title>Contacto | Sitio oficial de turismo de Ribera Azul</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     <link rel="icon" href="imagenes/favicon.png" type="image/png">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -17,7 +18,7 @@
         <p>Comunicate con la oficina de turismo de nuestra ciudad.</p>
         <nav>
             <ul>
-                <li><a href="index.html">Página Principal</a></li>
+                <li><a href="index.html">Inicio</a></li>
                 <li><a href="lugares.html">Lugares</a></li>
                 <li><a href="ciudad.html">Ciudad</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
@@ -26,7 +27,7 @@
     </header>
 
     <main>
-        <section>
+        <section class="seccion-contacto">
             <!-- Información de contacto y formulario para consultas. -->
             <h2>Contacto</h2>
             <p>Este es un espacio para que acerques comentarios, dudas o sugerencias.</p>
@@ -35,7 +36,7 @@
                 o a través de la burbuja de chat.
             </p>
 
-            <form action="/enviar" method="post">
+            <form action="#" method="post">
                 <div>
                     <label for="nombre">Nombre *</label><br>
                     <input type="text" id="nombre" name="nombre" autocomplete="name" required>
@@ -98,17 +99,8 @@
             </form>
         </section>
 
-        <section>
-            <!-- Datos de la oficina de información turística. -->
-            <h2>Oficina de Información Turística</h2>
-            <p><strong>Dirección:</strong> Av. Principal 123, Centro, Ribera Azul, Río Negro</p>
-            <p><strong>Teléfono:</strong> <a href="tel:+541112345678">+54 11 1234-5678</a></p>
-            <p><strong>Correo electrónico:</strong> <a href="mailto:turismo@gmail.com">turismo@gmail.com</a></p>
-            <p><strong>WhatsApp:</strong> <a href="https://wa.me/5491150500147" target="_blank" rel="noopener noreferrer"><img src="imagenes/Contacto/-icon-wapp.png" alt="WhatsApp" width="13" height="13"> Escribinos por WhatsApp</a></p>
-        </section>
-
-        <section>
-            <h2>¿En qué podemos ayudarte?</h2>
+        <section class="seccion-ayuda"> 
+    <h2>¿En qué podemos ayudarte?</h2> 
             <p>Podemos ayudarte con información sobre lugares turísticos, actividades, alojamiento, gastronomía y recomendaciones para disfrutar de tu visita a Ribera Azul.</p>
             <ul>
                 <li>Información sobre lugares turísticos.</li>
