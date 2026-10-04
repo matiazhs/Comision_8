@@ -394,4 +394,18 @@ form button:hover {
     margin: 30px 0 10px 0;
 }
 
+.lugares img, 
+main img {
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  display: block;
+  margin: 20px auto;
+  max-width: 90%;
+  transition: transform 0.3s ease;
+}
+
+.lugares img:hover {
+  transform: scale(1.02);
+}
+
 
