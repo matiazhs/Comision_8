@@ -408,4 +408,34 @@ main img {
   transform: scale(1.02);
 }
 
+.index-section {
+  width: 95% !important;
+  max-width: 1200px !important; 
+  padding: 20px 30px !important;
+}
 
+.index-section aside {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 40px 0 !important;
+  box-sizing: border-box;
+}
+
+.index-section aside p {
+  white-space: normal !important;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+.index-section ul {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 20px auto !important;
+}
+.index-section ul li {
+  padding-left: 0 !important;
+  text-align: center;
+}
+.index-section ul li::marker {
+  content: none !important;
+}
