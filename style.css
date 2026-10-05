@@ -263,9 +263,19 @@ form button:hover {
     margin: 15px auto;
 }
 
+#icono-whatsapp img {
+    
+    display: inline-block !important;
+    width: 15px !important;
+    height: 15px !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+}
 
 /* ----------------------
-    PAGINA INDEX
+    PAGINA INDEX Y LUGARES
  ----------------------*/
 
 .index-main {
