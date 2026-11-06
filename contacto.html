@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Contactate con la oficina de turismo de Ribera Azul para realizar consultas, sugerencias y obtener información turística.">
     <title>Contacto | Sitio oficial de turismo de Ribera Azul</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&family=Roboto:wdth,wght@75..100,100..900&display=swap" rel="stylesheet">
@@ -28,115 +32,124 @@
       </ul>
     </nav>
 
-    <main>
-        <section class="seccion-contacto">
-            <!-- Información de contacto y formulario para consultas. -->
-            <h2>Contacto</h2>
-            <p>Este es un espacio para que acerques comentarios, dudas o sugerencias.</p>
-            <p><strong>Ahora estar en contacto es más simple y rápido:</strong> lunes a viernes de 10 a 17 h, sábados, domingos y feriados de 10 a 19 h, podés hablar con un asistente de turismo haciendo clic en este número
-                <a id="icono-whatsapp" href="https://wa.me/5491150500147" target="_blank" rel="noopener noreferrer"><br><img src="imagenes/Contacto/-icon-wapp.png" alt="WhatsApp" width="13" height="13"> +54 11 1234-5678</a>
-                o a través de la burbuja de chat.
-            </p>
+    <main class="container my-4">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-8">
+                <section class="seccion-contacto">
+                    <!-- Información de contacto y formulario para consultas. -->
+                    <h2>Contacto</h2>
+                    <p>Este es un espacio para que acerques comentarios, dudas o sugerencias.</p>
+                    <p><strong>Ahora estar en contacto es más simple y rápido:</strong> lunes a viernes de 10 a 17 h, sábados, domingos y feriados de 10 a 19 h, podés hablar con un asistente de turismo haciendo clic en este número
+                        <a id="icono-whatsapp" href="https://wa.me/5491150500147" target="_blank" rel="noopener noreferrer"><br><img src="imagenes/Contacto/-icon-wapp.png" alt="WhatsApp" width="13" height="13"> +54 11 1234-5678</a>
+                        o a través de la burbuja de chat.
+                    </p>
 
-            <form action="#" method="post">
-                <div>
-                    <label for="nombre">Nombre *</label><br>
-                    <input type="text" id="nombre" name="nombre" autocomplete="name" required>
-                </div>
+                    <form action="#" method="post">
+                        <div>
+                            <label for="nombre">Nombre *</label><br>
+                            <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+                        </div>
 
-                <div>
-                    <label for="email">Email *</label><br>
-                    <input type="email" id="email" name="email" autocomplete="email" required>
-                </div>
+                        <div>
+                            <label for="email">Email *</label><br>
+                            <input type="email" id="email" name="email" autocomplete="email" required>
+                        </div>
 
-                <div>
-                    <label for="tipo_consulta">Tipo de Consulta *</label><br>
-                    <select id="tipo_consulta" name="tipo_consulta" required>
-                        <option value="">Seleccione</option>
-                        <option value="general">General</option>
-                        <option value="turismo">Información turística</option>
-                        <option value="lugares">Información sobre lugares</option>
-                        <option value="alojamiento">Alojamiento</option>
-                        <option value="sugerencia">Sugerencia</option>
-                        <option value="otro">Otro</option>
-                    </select>
-                </div>
+                        <div>
+                            <label for="tipo_consulta">Tipo de Consulta *</label><br>
+                            <select id="tipo_consulta" name="tipo_consulta" required>
+                                <option value="">Seleccione</option>
+                                <option value="general">General</option>
+                                <option value="turismo">Información turística</option>
+                                <option value="lugares">Información sobre lugares</option>
+                                <option value="alojamiento">Alojamiento</option>
+                                <option value="sugerencia">Sugerencia</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
 
-                <div>
-                    <label for="consulta">Consulta *</label><br>
-                    <textarea id="consulta" name="consulta" rows="5" maxlength="1000" required></textarea>
-                    <small>Máximo 1000 caracteres.</small>
-                </div>
+                        <div>
+                            <label for="consulta">Consulta *</label><br>
+                            <textarea id="consulta" name="consulta" rows="5" maxlength="1000" required></textarea>
+                            <small>Máximo 1000 caracteres.</small>
+                        </div>
 
-                <div>
-                    <label for="pais">País *</label><br>
-                    <select id="pais" name="pais" required>
-                        <option value="">Seleccioná</option>
-                        <optgroup label="Países cercanos">
-                            <option value="ar">Argentina</option>
-                            <option value="br">Brasil</option>
-                            <option value="cl">Chile</option>
-                            <option value="uy">Uruguay</option>
-                        </optgroup>
-                        <optgroup label="Otros países">
-                            <option value="us">Estados Unidos</option>
-                            <option value="uk">Reino Unido</option>
-                            <option value="fr">Francia</option>
-                            <option value="de">Alemania</option>
-                            <option value="es">España</option>
-                            <option value="it">Italia</option>
-                            <option value="otro">Otro</option>
-                        </optgroup>
-                    </select>
-                </div>
+                        <div>
+                            <label for="pais">País *</label><br>
+                            <select id="pais" name="pais" required>
+                                <option value="">Seleccioná</option>
+                                <optgroup label="Países cercanos">
+                                    <option value="ar">Argentina</option>
+                                    <option value="br">Brasil</option>
+                                    <option value="cl">Chile</option>
+                                    <option value="uy">Uruguay</option>
+                                </optgroup>
+                                <optgroup label="Otros países">
+                                    <option value="us">Estados Unidos</option>
+                                    <option value="uk">Reino Unido</option>
+                                    <option value="fr">Francia</option>
+                                    <option value="de">Alemania</option>
+                                    <option value="es">España</option>
+                                    <option value="it">Italia</option>
+                                    <option value="otro">Otro</option>
+                                </optgroup>
+                            </select>
+                        </div>
 
-                <div>
-                    <input type="checkbox" id="recaptcha" name="recaptcha" required>
-                    <label for="recaptcha">No soy un robot</label>
-                </div>
+                        <div>
+                            <input type="checkbox" id="recaptcha" name="recaptcha" required>
+                            <label for="recaptcha">No soy un robot</label>
+                        </div>
 
-                <div>
-                    <button type="submit">Enviar</button>
-                </div>
-            </form>
-        </section>
+                        <div>
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </form>
+                </section>
 
-        <section class="seccion-ayuda"> 
-    <h2>¿En qué podemos ayudarte?</h2> 
-            <p>Podemos ayudarte con información sobre lugares turísticos, actividades, alojamiento, gastronomía y recomendaciones para disfrutar de tu visita a Ribera Azul.</p>
-            <ul>
-                <li>Información sobre lugares turísticos.</li>
-                <li>Actividades para realizar en Ribera Azul.</li>
-                <li>Información sobre alojamiento.</li>
-                <li>Información sobre gastronomía.</li>
-                <li>Información general sobre la ciudad.</li>
-            </ul>
-        </section>
+                <section class="seccion-ayuda"> 
+                    <h2>¿En qué podemos ayudarte?</h2> 
+                    <p>Podemos ayudarte con información sobre lugares turísticos, actividades, alojamiento, gastronomía y recomendaciones para disfrutar de tu visita a Ribera Azul.</p>
+                    <ul>
+                        <li>Información sobre lugares turísticos.</li>
+                        <li>Actividades para realizar en Ribera Azul.</li>
+                        <li>Información sobre alojamiento.</li>
+                        <li>Información sobre gastronomía.</li>
+                        <li>Información general sobre la ciudad.</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
     </main>
 
-<footer>
-        <section>
-            <h4>Turismo Ribera Azul</h4>
-            <p>Página oficial de información turística para visitantes. Descubrí la Comarca Andina.</p>
-        </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <section class="col-12 col-md-6">
+                    <h4>Turismo Ribera Azul</h4>
+                    <p>Página oficial de información turística para visitantes. Descubrí la Comarca Andina.</p>
+                </section>
 
-        <section>
-            <h4>Contacto</h4>
-            <ul>
-                <li><strong>Dirección:</strong> Av. Principal 123, Centro, Ribera Azul, Río Negro</li>
-                <li><strong>Teléfono:</strong> +54 11 1234-5678</li>
-                <li><strong>Email:</strong>turismo@gmail.com</li>
-                <li><a href="contacto.html">Ver mas</a></li>
-            </ul>
-        </section>
+                <section class="col-12 col-md-6">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><strong>Dirección:</strong> Av. Principal 123, Centro, Ribera Azul, Río Negro</li>
+                        <li><strong>Teléfono:</strong> +54 11 1234-5678</li>
+                        <li><strong>Email:</strong> turismo@gmail.com</li>
+                        <li><a href="contacto.html">Ver mas</a></li>
+                    </ul>
+                </section>
+            </div>
 
-        <div>
-            <p>&copy;2026 Turismo Ribera Azul - Todos los derechos reservados.</p>
+            <div class="row mt-3">
+                <div class="col-12 text-center">
+                    <p>&copy;2026 Turismo Ribera Azul - Todos los derechos reservados.</p>
+                </div>
+            </div>
         </div>
     </footer>
 
-
-    
-
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/bootstrap.bundle.min.js"></script>
 </body>
 </html>
