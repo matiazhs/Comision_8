@@ -279,7 +279,9 @@ form button:hover {
  ----------------------*/
 
 .index-section {
-  width: 1400px;
+  width: 100%;             
+  max-width: 1400px;       
+  margin: 0 auto 100px auto; 
   align-self: center;
   text-align: center;
   display: flex;
@@ -290,16 +292,17 @@ form button:hover {
   border-radius: 8px;
   overflow: hidden;
   border: 1px solid color-mix(in srgb, var(--color-bg-dark) 20%, transparent);
-  margin-bottom: 100px;
 }
 
 .index-section aside {
-  width: 1000px;
+  width: 90%;          
+  max-width: 1000px;   
   align-self: center;
   padding: 16px;
-  margin: 80px auto;
+  margin: 40px auto;   
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
   border-radius: 6px;
+  box-sizing: border-box;
 }
 
 .index-section h2,
@@ -450,3 +453,68 @@ form button:hover {
 #datos-clave a {
   color: var(--color-bg-dark);
 }
+
+/* =========================================
+   ESTILOS DE LA PÁGINA DE CONTACTO
+   ========================================= */
+.seccion-contacto form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  width: 100%;
+}
+
+.seccion-contacto form div {
+  width: 100%; 
+  max-width: none; 
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.seccion-contacto form input[type="text"],
+.seccion-contacto form input[type="email"],
+.seccion-contacto form select,
+.seccion-contacto form textarea {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+/* Alineación y centrado específico para el bloque del captcha */
+.seccion-contacto form div:has(input[type="checkbox"]) {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  gap: 8px;
+}
+
+.seccion-contacto form input[type="checkbox"] {
+  width: auto;
+  margin: 0;
+}
+
+/* Contenedor y centrado del botón de enviar */
+.seccion-contacto form div:has(button[type="submit"]) {
+  display: flex;
+  justify-content: center; 
+  width: 100%;
+}
+
+.seccion-contacto form button[type="submit"] {
+  background-color: var(--color-bg-dark, #222);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 200px;
+  margin-top: 10px;
+}
+
+
