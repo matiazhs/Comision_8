@@ -11,23 +11,28 @@
     </head>
     <body>
         <header>
-            <h1>Lugares turísticos de Ribera Azul</h1>
-            <hr>
-            <strong> Descubre más sobre nuestra hermosa ciudad.</strong>
             <h1>Bienvenido a Ribera Azul</h1>
             <p>El corazón de la Comarca Andina en la Patagonia Argentina</p>
-            <nav>
-                <section class="seccion-puntitos">
-                    <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="ciudad.html">La ciudad</a></li>
-                        <li><a href="lugares.html">Lugares</a></li>
-                        <li><a href="ciudad.html">Ciudad</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                    </ul>
-                </section>
-            </nav>
         </header>
+            <nav class="navbar navbar-expand-lg navbar-dark ">
+            <div class="container-fluid px-4">
+            <a class="navbar-brand py-0" href="index.html">
+                <img src="imagenes/logo_ribera_azul.png" alt="Ribera Azul" height="35" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item px-2"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item px-2"><a class="nav-link" href="lugares.html">Lugares</a></li>
+            <li class="nav-item px-2"><a class="nav-link" href="ciudad.html">Ciudad</a></li>
+            <li class="nav-item px-2"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
         
         
         <main class="body">
@@ -98,22 +103,30 @@
                 </section>
             </section>
         </main>
-        <footer class="footer">
-            <section>
-                <h3>Turismo Ribera Azul</h3>
-                <p>Página oficial de información turística para visitantes. Descubrí la Comarca Andina.</p>
-            </section>
-            <section>
-                <h4>Contacto e Informes</h4>
-                <ul>
-                    <li><strong>Dirección:</strong> Av. Principal 123, Centro, Ribera Azul, Río Negro</li>
-                    <li><strong>Teléfono:</strong> +54 11 1234-5678</li>
-                    <li><strong>Email:</strong> turismo@gmail.com</li>
-                    <li><a href="contacto.html">Ver más</a></li>
-                </ul>
-            </section>
-            <div>
-                <p>&copy; 2026 Turismo Ribera Azul - Todos los derechos reservados.</p>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <section class="col-12 col-md-6">
+                        <h4>Turismo Ribera Azul</h4>
+                        <p>Página oficial de información turística para visitantes. Descubrí la Comarca Andina.</p>
+                    </section>
+
+                    <section class="col-12 col-md-6">
+                        <h4>Contacto</h4>
+                        <ul>
+                            <li><strong>Dirección:</strong> Av. Principal 123, Centro, Ribera Azul, Río Negro</li>
+                            <li><strong>Teléfono:</strong> +54 11 1234-5678</li>
+                            <li><strong>Email:</strong> turismo@gmail.com</li>
+                            <li><a href="contacto.html">Ver mas</a></li>
+                        </ul>
+                    </section>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-12 text-center">
+                        <p>&copy;2026 Turismo Ribera Azul - Todos los derechos reservados.</p>
+                    </div>
+                </div>
             </div>
         </footer>
         <script>
