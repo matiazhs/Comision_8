@@ -1,158 +1,202 @@
 <!DOCTYPE html>
-    <html lang="es">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Ribera Azul — Lugares Turísticos y Atractivos Naturales</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&family=Roboto:wdth,wght@75..100,100..900&display=swap" rel="stylesheet">
-        <link rel="icon" href="imagenes/favicon.png" type="image/png" />
-        <!-- <link rel="stylesheet" href="style.css"> -->
-        <link rel="stylesheet" href="/css/style.css">
-    </head>
-    <body>
-        <header>
-            <h1>Bienvenido a Ribera Azul</h1>
-            <p>El corazón de la Comarca Andina en la Patagonia Argentina</p>
-        </header>
-<nav class="navbar navbar-expand-lg navbar-dark">
-      <div class="container-fluid px-4">
-      
-        <a class="navbar-brand py-0" href="index.html">
-          <img src="imagenes/logo_ribera_azul.png" alt="Ribera Azul" height="40" class="d-inline-block align-text-top">
-        </a>
+<html lang="es">
 
-        
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ribera Azul — Lugares Turísticos y Atractivos Naturales</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&family=Roboto:wdth,wght@75..100,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="imagenes/favicon.png" type="image/png" />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
 
-        
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav align-items-lg-center">
-            <li class="nav-item px-2"><a class="nav-link" href="index.html">Inicio</a></li>
-            <li class="nav-item px-2"><a class="nav-link" href="lugares.html">Lugares</a></li>
-            <li class="nav-item px-2"><a class="nav-link" href="ciudad.html">Ciudad</a></li>
-            <li class="nav-item px-2"><a class="nav-link" href="contacto.html">Contacto</a></li>
+<body>
+    <header>
+        <h1>Bienvenido a Ribera Azul</h1>
+        <p>El corazón de la Comarca Andina en la Patagonia Argentina</p>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid px-4">
 
-            <li class="nav-item px-2"> <button class="nav-link" id="btn-dark-mode" type="button"> Modo Oscuro </button> </li>
-          </ul>
+            <a class="navbar-brand py-0" href="index.html">
+                <img src="imagenes/logo_ribera_azul.png" alt="Ribera Azul" height="40"
+                    class="d-inline-block align-text-top">
+            </a>
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-lg-center">
+                    <li class="nav-item px-2"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item px-2"><a class="nav-link" href="lugares.html">Lugares</a></li>
+                    <li class="nav-item px-2"><a class="nav-link" href="ciudad.html">Ciudad</a></li>
+                    <li class="nav-item px-2"><a class="nav-link" href="contacto.html">Contacto</a></li>
+
+                    <li class="nav-item px-2"> <button class="nav-link" id="btn-dark-mode" type="button"> Modo Oscuro
+                        </button> </li>
+                </ul>
+            </div>
+
         </div>
-
-      </div>
     </nav>
-        
-        
-        <main class="body">
-            <section class="main">
-                <section class="seccion-lugares">
-                    <h2>Principales lugares de interés</h2>
-                    <!-- Se quitó el botón duplicado de cada card; queda uno antes de .mas-info. -->
-                    <div class="container my-4">
-  <input type="text" id="buscador" class="form-control" placeholder="Buscar un lugar...">
-</div>
-                    <div class="contenedor-cards">
-                        <article class="card">
-                            <img src="imagenes/lugares/cerropiltriquitron.jpg" class="card-img-top" alt="Vista del Cerro Piltriquitrón y sus montañas">
-                            <div class="card-body">
-                                <h3 class="card-title">Cerro Piltriquitrón</h3>
-                                <p class="card-text">Es uno de los principales atractivos naturales de la zona, conocido por sus paisajes montañosos.</p>
-                                <button class="btn" type="button">Ver más</button>
-                                <p class="mas-info">El Cerro Piltriquitrón se encuentra cerca de Ribera Azul, en Río Negro, y forma parte del paisaje característico de la localidad. Sus bosques y vistas panorámicas permiten apreciar la combinación de la ciudad, el valle cordillerano y las montañas. En sus alrededores se pueden recorrer senderos, observar el paisaje, sacar fotografías y disfrutar de actividades de montaña al aire libre.</p>
-                            </div>
-                        </article>
-                        <article class="card">
-                            <img src="imagenes/lugares/cajondelazul.jpg" class="card-img-top" alt="Paisaje del Cajón del Azul">
-                            <div class="card-body">
-                                <h3 class="card-title">Cajón del Azul</h3>
-                                <p class="card-text">Es un atractivo natural destacado por sus aguas cristalinas y sus tonos azulados.</p>
-                                <button class="btn" type="button">Ver más</button>
-                                <p class="mas-info">El Cajón del Azul se encuentra en el Área Natural Protegida Río Azul - Lago Escondido, al oeste de Ribera Azul, en un sector cordillerano rodeado de bosques, ríos, arroyos y montañas. Para llegar se recorren senderos a pie. Es un lugar ideal para hacer trekking, acercarse al río, disfrutar de los bosques y sacar fotografías de sus aguas cristalinas y paisajes.</p>
-                            </div>
-                        </article>
-                        <article class="card">
-                            <img src="imagenes/lugares/rioazul.webp" class="card-img-top" alt="Vista del Río Azul">
-                            <div class="card-body">
-                                <h3 class="card-title">Río Azul</h3>
-                                <p class="card-text">Es uno de los atractivos naturales más importantes de los alrededores, con aguas azuladas y paisajes verdes.</p>
-                                <button class="btn" type="button">Ver más</button>
-                                <p class="mas-info">El Río Azul recorre distintos sectores naturales de la zona de Ribera Azul, en Río Negro, y está relacionado con el Área Natural Protegida Río Azul - Lago Escondido. Sus aguas presentan tonos azules y turquesas entre bosques y montañas. Se pueden recorrer senderos y llegar al Mirador del Río Azul para apreciar el paisaje y sacar fotografías.</p>
-                            </div>
-                        </article>
-                        <article class="card">
-                            <img src="imagenes/lugares/cascadaescondida.jpg" class="card-img-top" alt="Vista de la Cascada Escondida">
-                            <div class="card-body">
-                                <h3 class="card-title">Cascada Escondida</h3>
-                                <p class="card-text">Es un atractivo natural conocido por su caída de agua y el bosque nativo que la rodea.</p>
-                                <button class="btn" type="button">Ver más</button>
-                                <p class="mas-info">La Cascada Escondida está en los alrededores de Ribera Azul, Río Negro, y tiene una caída de agua de unos 30 metros rodeada de bosque nativo. Se llega caminando por senderos entre los árboles. El recorrido permite disfrutar de la cascada desde distintos puntos, observar el entorno y sacar fotografías; es una opción accesible para una salida de naturaleza.</p>
-                            </div>
-                        </article>
-                        <article class="card">
-                            <img src="imagenes/lugares/glaciarhieloazul.jpg" class="card-img-top" alt="Vista del Glaciar del Hielo Azul">
-                            <div class="card-body">
-                                <h3 class="card-title">Glaciar del Hielo Azul</h3>
-                                <p class="card-text">Es uno de los atractivos de montaña más destacados por sus paisajes y su glaciar.</p>
-                                <button class="btn" type="button">Ver más</button>
-                                <p class="mas-info">El Glaciar del Hielo Azul se encuentra a unos 1800 metros de altura, en la zona cordillerana. Para llegar se realiza un extenso recorrido de montaña que atraviesa bosques y sectores de altura con roca y hielo. El trekking permite disfrutar del glaciar, de las vistas del ascenso y de los distintos paisajes del recorrido.</p>
-                            </div>
-                        </article>
-                        <article class="card">
-                            <img src="imagenes/lugares/bosquetallado.jpg" class="card-img-top" alt="Vista del Bosque Tallado">
-                            <div class="card-body">
-                                <h3 class="card-title">Bosque Tallado</h3>
-                                <p class="card-text">Es un museo a cielo abierto en la ladera del Cerro Piltriquitrón, con esculturas talladas en madera.</p>
-                                <button class="btn" type="button">Ver más</button>
-                                <p class="mas-info">El Bosque Tallado está en la ladera del Cerro Piltriquitrón, cerca de Ribera Azul. Tras los incendios que afectaron la zona entre 1978 y 1982, escultores transformaron troncos de lengas en obras de arte desde 1998. Se puede recorrer el sendero, observar las esculturas y disfrutar del paisaje de montaña, en una propuesta que combina arte y naturaleza.</p>
-                            </div>
-                        </article>
-                    </div>
-                    <aside>
-                        <h2>Recomendación</h2>
-                        <p>Te recomendamos visitar estos lugares para conocer la diversidad natural de Ribera Azul y disfrutar de sus montañas, bosques, ríos y paisajes. Cada uno ofrece una experiencia diferente al aire libre.</p>
-                    </aside>
-                </section>
-            </section>
-        </main>
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <section class="col-12 col-md-6">
-                        <h4>Turismo Ribera Azul</h4>
-                        <p>Página oficial de información turística para visitantes. Descubrí la Comarca Andina.</p>
-                    </section>
 
-                    <section class="col-12 col-md-6">
-                        <h4>Contacto</h4>
-                        <ul>
-                            <li><strong>Dirección:</strong> Av. Principal 123, Centro, Ribera Azul, Río Negro</li>
-                            <li><strong>Teléfono:</strong> +54 11 1234-5678</li>
-                            <li><strong>Email:</strong> turismo@gmail.com</li>
-                            <li><a href="contacto.html">Ver mas</a></li>
-                        </ul>
-                    </section>
+
+    <main class="body">
+        <section class="main">
+            <section class="seccion-lugares">
+                <h2>Principales lugares de interés</h2>
+                <!-- Se quitó el botón duplicado de cada card; queda uno antes de .mas-info. -->
+                <div class="container my-4">
+                    <input type="text" id="buscador" class="form-control" placeholder="Buscar un lugar...">
                 </div>
+                <div class="contenedor-cards">
+                    <article class="card">
+                        <img src="imagenes/lugares/cerropiltriquitron.jpg" class="card-img-top"
+                            alt="Vista del Cerro Piltriquitrón y sus montañas">
+                        <div class="card-body">
+                            <h3 class="card-title">Cerro Piltriquitrón</h3>
+                            <p class="card-text">Es uno de los principales atractivos naturales de la zona, conocido por
+                                sus paisajes montañosos.</p>
+                            <button class="btn" type="button">Ver más</button>
+                            <p class="mas-info">El Cerro Piltriquitrón se encuentra cerca de Ribera Azul, en Río Negro,
+                                y forma parte del paisaje característico de la localidad. Sus bosques y vistas
+                                panorámicas permiten apreciar la combinación de la ciudad, el valle cordillerano y las
+                                montañas. En sus alrededores se pueden recorrer senderos, observar el paisaje, sacar
+                                fotografías y disfrutar de actividades de montaña al aire libre.</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="imagenes/lugares/cajondelazul.jpg" class="card-img-top"
+                            alt="Paisaje del Cajón del Azul">
+                        <div class="card-body">
+                            <h3 class="card-title">Cajón del Azul</h3>
+                            <p class="card-text">Es un atractivo natural destacado por sus aguas cristalinas y sus tonos
+                                azulados.</p>
+                            <button class="btn" type="button">Ver más</button>
+                            <p class="mas-info">El Cajón del Azul se encuentra en el Área Natural Protegida Río Azul -
+                                Lago Escondido, al oeste de Ribera Azul, en un sector cordillerano rodeado de bosques,
+                                ríos, arroyos y montañas. Para llegar se recorren senderos a pie. Es un lugar ideal para
+                                hacer trekking, acercarse al río, disfrutar de los bosques y sacar fotografías de sus
+                                aguas cristalinas y paisajes.</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="imagenes/lugares/rioazul.webp" class="card-img-top" alt="Vista del Río Azul">
+                        <div class="card-body">
+                            <h3 class="card-title">Río Azul</h3>
+                            <p class="card-text">Es uno de los atractivos naturales más importantes de los alrededores,
+                                con aguas azuladas y paisajes verdes.</p>
+                            <button class="btn" type="button">Ver más</button>
+                            <p class="mas-info">El Río Azul recorre distintos sectores naturales de la zona de Ribera
+                                Azul, en Río Negro, y está relacionado con el Área Natural Protegida Río Azul - Lago
+                                Escondido. Sus aguas presentan tonos azules y turquesas entre bosques y montañas. Se
+                                pueden recorrer senderos y llegar al Mirador del Río Azul para apreciar el paisaje y
+                                sacar fotografías.</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="imagenes/lugares/cascadaescondida.jpg" class="card-img-top"
+                            alt="Vista de la Cascada Escondida">
+                        <div class="card-body">
+                            <h3 class="card-title">Cascada Escondida</h3>
+                            <p class="card-text">Es un atractivo natural conocido por su caída de agua y el bosque
+                                nativo que la rodea.</p>
+                            <button class="btn" type="button">Ver más</button>
+                            <p class="mas-info">La Cascada Escondida está en los alrededores de Ribera Azul, Río Negro,
+                                y tiene una caída de agua de unos 30 metros rodeada de bosque nativo. Se llega caminando
+                                por senderos entre los árboles. El recorrido permite disfrutar de la cascada desde
+                                distintos puntos, observar el entorno y sacar fotografías; es una opción accesible para
+                                una salida de naturaleza.</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="imagenes/lugares/glaciarhieloazul.jpg" class="card-img-top"
+                            alt="Vista del Glaciar del Hielo Azul">
+                        <div class="card-body">
+                            <h3 class="card-title">Glaciar del Hielo Azul</h3>
+                            <p class="card-text">Es uno de los atractivos de montaña más destacados por sus paisajes y
+                                su glaciar.</p>
+                            <button class="btn" type="button">Ver más</button>
+                            <p class="mas-info">El Glaciar del Hielo Azul se encuentra a unos 1800 metros de altura, en
+                                la zona cordillerana. Para llegar se realiza un extenso recorrido de montaña que
+                                atraviesa bosques y sectores de altura con roca y hielo. El trekking permite disfrutar
+                                del glaciar, de las vistas del ascenso y de los distintos paisajes del recorrido.</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="imagenes/lugares/bosquetallado.jpg" class="card-img-top"
+                            alt="Vista del Bosque Tallado">
+                        <div class="card-body">
+                            <h3 class="card-title">Bosque Tallado</h3>
+                            <p class="card-text">Es un museo a cielo abierto en la ladera del Cerro Piltriquitrón, con
+                                esculturas talladas en madera.</p>
+                            <button class="btn" type="button">Ver más</button>
+                            <p class="mas-info">El Bosque Tallado está en la ladera del Cerro Piltriquitrón, cerca de
+                                Ribera Azul. Tras los incendios que afectaron la zona entre 1978 y 1982, escultores
+                                transformaron troncos de lengas en obras de arte desde 1998. Se puede recorrer el
+                                sendero, observar las esculturas y disfrutar del paisaje de montaña, en una propuesta
+                                que combina arte y naturaleza.</p>
+                        </div>
+                    </article>
+                </div>
+                <aside>
+                    <h2>Recomendación</h2>
+                    <p>Te recomendamos visitar estos lugares para conocer la diversidad natural de Ribera Azul y
+                        disfrutar de sus montañas, bosques, ríos y paisajes. Cada uno ofrece una experiencia diferente
+                        al aire libre.</p>
+                </aside>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <section class="col-12 col-md-6">
+                    <h4>Turismo Ribera Azul</h4>
+                    <p>Página oficial de información turística para visitantes. Descubrí la Comarca Andina.</p>
+                </section>
 
-                <div class="row mt-3">
-                    <div class="col-12 text-center">
-                        <p>&copy;2026 Turismo Ribera Azul - Todos los derechos reservados.</p>
-                    </div>
+                <section class="col-12 col-md-6">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><strong>Dirección:</strong> Av. Principal 123, Centro, Ribera Azul, Río Negro</li>
+                        <li><strong>Teléfono:</strong> +54 11 1234-5678</li>
+                        <li><strong>Email:</strong> turismo@gmail.com</li>
+                        <li><a href="contacto.html">Ver mas</a></li>
+                    </ul>
+                </section>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-12 text-center">
+                    <p>&copy;2026 Turismo Ribera Azul - Todos los derechos reservados.</p>
                 </div>
             </div>
-        </footer>
-        <script>
-          document.querySelectorAll('.card .btn').forEach(function(boton) {
-            boton.addEventListener('click', function() {
-              const info = this.nextElementSibling;
-              info.classList.toggle('abierto');
-              this.textContent = info.classList.contains('abierto') ? 'Ver menos' : 'Ver más';
+        </div>
+    </footer>
+    <script>
+        document.querySelectorAll('.card .btn').forEach(function (boton) {
+            boton.addEventListener('click', function () {
+                const info = this.nextElementSibling;
+                info.classList.toggle('abierto');
+                this.textContent = info.classList.contains('abierto') ? 'Ver menos' : 'Ver más';
             });
-          });
-        </script>
-        <!-- Se quitó el onclick inline de las cards y se centralizó su comportamiento en un único script. -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="main.js"></script>
-    </body>
+        });
+    </script>
+    <!-- Se quitó el onclick inline de las cards y se centralizó su comportamiento en un único script. -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
 </html>
