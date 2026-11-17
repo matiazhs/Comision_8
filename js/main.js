@@ -24,3 +24,13 @@ if (buscador) {
     }
   });
 }
+
+// Botones Ver más / Ver menos de las cards
+document.querySelectorAll('.card .btn').forEach(function (boton) {
+    boton.addEventListener('click', function () {
+        const info = this.nextElementSibling;
+        if (!info) return;
+        info.classList.toggle('abierto');
+        this.textContent = info.classList.contains('abierto') ? 'Ver menos' : 'Ver más';
+    });
+});
