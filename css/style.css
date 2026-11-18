@@ -6,11 +6,11 @@
 
 :root {
   --color-bg-dark: #252f3b;
-  --color-bg-light: #f9f9f9;
-  --dark--color-text: #1a1a1a;
-  --light-color-text: #f8f9fa;
+  --color-bg-light: #f8f8f8;
+  --dark--color-text: #121212;
+  --light-color-text: #f8f8f8;
   --color-text-muted: #666666;
-  --nav-color-text:#f9f9f9;
+  --nav-color-text:#f8f8f8;
   --footer-color-text:#bdc3c7;
   --fuente-titulos: "Playfair Display", serif;
   --fuente-texto: "Roboto", sans-serif;
@@ -19,7 +19,7 @@
 
 .modo-oscuro{
   --color-bg-light: #121212;
-  --dark--color-text: #fafafa;
+  --dark--color-text: #f8f8f8;
   --light-color-text: #121212;
   --color-text-muted: #c4c4c4;
 }
@@ -150,7 +150,7 @@ footer ul li {
 
 footer ul li a {
   text-decoration: none;
-  color: #ffffff;
+  color: var(--nav-color-text);
   transition: 300ms;
   padding: 5px 0px;
 }
@@ -291,23 +291,6 @@ form button:hover {
     SECTION 1
  ----------------------*/
 
- .modo-oscuro .card {
-  background-color: var(--color-bg-light);
-  color: var(--dark--color-text);
-  border-color: var(--color-bg-dark);
-}
-
-.modo-oscuro .card-title {
-  font-family: var(--fuente-titulos);
-  color: var(--dark--color-text);
-}
-
-.modo-oscuro .card-text,
-.mas-info {
-  font-family: var(--fuente-texto);
-  color: var(--color-text-muted);
-}
-
 .index-section {
   width: 100%;             
   max-width: 1400px;       
@@ -418,6 +401,7 @@ form button:hover {
   margin: 40px auto;
 }
 
+
 .ciudad-contenedor section,
 .ciudad-contenedor aside {
   margin-bottom: 30px;
@@ -451,7 +435,7 @@ form button:hover {
 }
 
 #barrios-contenedor article {
-  background-color: #ffffff;
+  background-color: var(--color-bg-light);
   padding: 10px;
   border-radius: 6px;
 }
@@ -579,15 +563,6 @@ form button:hover {
 
   /* tamaño y color del margen de la página */
 
-  .footer {
-    width: 100%;
-    box-sizing: border-box;
-    border: 30px solid #ccc;
-    border-radius: 20px;
-    overflow: hidden;
-    margin-top: 50px;
-    padding: 20px;
-  }
 
 
   /* Tarjeta principal */
@@ -752,4 +727,28 @@ form button:hover {
   .seccion-lugares {
     padding: 24px;
   }
+}
+
+#buscador {
+  background-color: var(--color-bg-light);
+  color: var(--dark--color-text);
+}
+
+#buscador::placeholder {
+  color: var(--color-text-muted);
+}
+
+.modo-oscuro .card {
+  background-color: var(--color-bg-light);
+  color: var(--dark--color-text);
+  border-color: var(--color-bg-dark);
+}
+
+.modo-oscuro .card-title {
+  color: var(--dark--color-text);
+}
+
+.modo-oscuro .card-text,
+.mas-info {
+  color: var(--color-text-muted);
 }
