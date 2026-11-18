@@ -34,3 +34,12 @@ document.querySelectorAll('.card .btn').forEach(function (boton) {
         this.textContent = info.classList.contains('abierto') ? 'Ver menos' : 'Ver más';
     });
 });
+
+// Modo oscuro
+const darkBtn = document.getElementById("btn-dark-mode");
+
+if (darkBtn) {
+  darkBtn.addEventListener("click", () => {
+    document.body.classList.toggle("oscuro");
+  });
+}
