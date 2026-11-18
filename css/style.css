@@ -10,15 +10,18 @@
   --dark--color-text: #1a1a1a;
   --light-color-text: #f8f9fa;
   --color-text-muted: #666666;
+  --nav-color-text:#f9f9f9;
+  --footer-color-text:#bdc3c7;
   --fuente-titulos: "Playfair Display", serif;
   --fuente-texto: "Roboto", sans-serif;
+
 }
 
 .modo-oscuro{
-  --color-bg-light: #1a1a1a;
+  --color-bg-light: #121212;
   --dark--color-text: #fafafa;
-  --light-color-text: #1a1a1a;
-  --color-text-muted: #666666;
+  --light-color-text: #121212;
+  --color-text-muted: #c4c4c4;
 }
 
 /* Bootstrap - personalizaciones */
@@ -47,6 +50,7 @@ body {
   line-height: 1.5;
   margin: 0;
   padding: 0;
+  color:var(--dark--color-text);
 }
 
 h1,
@@ -54,6 +58,7 @@ h2,
 h3,
 h4 {
   font-family: var(--fuente-titulos);
+  color: var(--dark--color-text);
 }
 
 /* ----------------------
@@ -62,13 +67,17 @@ h4 {
 
 header {
   background: var(--color-bg-dark);
-  color: var(--light-color-text);
   padding: 10px 0;
   text-align: center;
   margin: 0;
   overflow: visible; 
 }
-
+header h1{
+  color: var(--nav-color-text);
+}
+header p{
+  color: var(--nav-color-text);
+}
 .navbar {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   background-color: var(--color-bg-dark);
@@ -77,9 +86,8 @@ header {
   z-index: 1000 ;
 }
 
-
 .nav-link{
-  color: var(--light-color-text);
+  color: var(--nav-color-text);
   font-size: 1.05rem;
   border-radius: 4px;
   transition: 300ms ;
@@ -101,11 +109,11 @@ html {
     FOOTER
  ----------------------*/
 footer {
-  background: #252f3b;
+  background: var(--color-bg-dark);
   margin-top: auto;
   display: flex;
   justify-content: space-around;
-  color: #ffffff;
+  color: var(--nav-color-text);
   padding: 20px 16px;
   margin-top: 100px;
   flex-wrap: wrap;
@@ -117,7 +125,7 @@ footer section {
 }
 
 footer h4 {
-  color: #ffffff;
+  color:var(--nav-color-text);
   font-size: 1.2rem;
   margin-bottom: 15px;
   border-bottom: 2px solid #ffffff;
@@ -126,7 +134,7 @@ footer h4 {
 }
 
 footer p {
-  color: #bdc3c7;
+  color: var(--footer-color-text);
   font-size: 0.95rem;
 }
 
@@ -137,7 +145,7 @@ footer ul {
 footer ul li {
   margin-bottom: 8px;
   font-size: 0.95rem;
-  color: #bdc3c7;
+  color: var(--footer-color-text);
 }
 
 footer ul li a {
@@ -283,6 +291,23 @@ form button:hover {
     SECTION 1
  ----------------------*/
 
+ .modo-oscuro .card {
+  background-color: var(--color-bg-light);
+  color: var(--dark--color-text);
+  border-color: var(--color-bg-dark);
+}
+
+.modo-oscuro .card-title {
+  font-family: var(--fuente-titulos);
+  color: var(--dark--color-text);
+}
+
+.modo-oscuro .card-text,
+.mas-info {
+  font-family: var(--fuente-texto);
+  color: var(--color-text-muted);
+}
+
 .index-section {
   width: 100%;             
   max-width: 1400px;       
@@ -374,11 +399,12 @@ form button:hover {
 
 .index-section article a:hover {
   background-color: var(--color-bg-dark);
-  color: var(--light-color-text);
+  color:#f9f9f9;
   border-radius: 4px;
   transition: 300ms;
   max-height: 100%;
 }
+
 
 /* ----------------------
     PAGINA CIUDAD
@@ -717,47 +743,6 @@ form button:hover {
   display: block;
 }
 
-/* Footer de lugares */
-.footer {
-  width: 100%;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 20px;
-  border: 0;
-  border-radius: 0;
-  overflow: hidden;
-  background-color: #0A2540;
-  color: #fff;
-}
-
-.footer h3,
-.footer h4,
-.footer p,
-.footer ul li,
-.footer ul li a {
-  color: #fff;
-}
-
-.footer section {
-  flex: 1 1 300px;
-  margin-bottom: 20px;
-}
-
-.footer ul {
-  list-style: none;
-}
-
-.footer ul li {
-  margin-bottom: 8px;
-}
-
-.footer div {
-  width: 100%;
-  text-align: center;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  padding-top: 10px;
-  margin-top: 10px;
-}
 
 @media (max-width: 768px) {
   .contenedor-cards {

@@ -40,6 +40,6 @@ const darkBtn = document.getElementById("btn-dark-mode");
 
 if (darkBtn) {
   darkBtn.addEventListener("click", () => {
-    document.body.classList.toggle("oscuro");
+    document.body.classList.toggle("modo-oscuro");
   });
 }
